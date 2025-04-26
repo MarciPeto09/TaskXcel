@@ -27,7 +27,6 @@ import java.util.List;
         private UsersService userService;
 
 
-//        @PreAuthorize("hasAnyRole('MANAGER')")
         @GetMapping
         public String showDashboard(Model model, HttpSession session) {
             List<ResponseTaskDto> tasks = taskService.getAllTasks();

@@ -18,7 +18,7 @@ public class LoginController {
     @Autowired
     private  UsersService usersService;
 
-//    @PreAuthorize("hasAnyRole('EMPLOYEE', 'MANAGER')")
+
     @GetMapping
     public String showLoginForm(Model model) {
         model.addAttribute("user", new RequestUserDto());
